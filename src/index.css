@@ -1,0 +1,35 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+      width: 100% !important;
+}
+
+@font-face {
+  font-family: 'PlaywriteDEGrund-Regular';
+  src: url(/src/assets/font/PlaywriteDEGrund-Regular.ttf);
+}
+@font-face {
+  font-family: 'LamaSans-Medium';
+  src: url(/src/assets/font/LamaSans-Medium.ttf);
+}
+
+:root {
+  --color-primary-white: rgb(240, 240, 240);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  font-family: 'Roboto', sans-serif;
+ /* height: 700px;*/
+}
+
+
+.popular-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem 2rem;
+}
